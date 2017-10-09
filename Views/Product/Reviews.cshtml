@@ -12,10 +12,10 @@
 <div class="page product-reviews-page">
     <div class="page-title">
         <h1 class="h3">
+            @T("Reviews.ProductReviewsFor")
             <small>
                 <a href="@Url.RouteUrl("Product", new { SeName = Model.ProductSeName })" style="text-decoration: none;">@Model.ProductName</a>
             </small>
-			@T("Reviews.ProductReviewsFor")
 		</h1>
     </div>
 
@@ -80,7 +80,7 @@
                     }
 
                     <div class="form-group row m-b-0">
-						<div class="col-md-9 push-md-3">
+						<div class="col-md-9 pull-md-3">
 							<button type="submit" name="add-review" value="add-review" class="btn btn-primary write-product-review-button">
 								<span>@T("Reviews.SubmitButton")</span>
 							</button>

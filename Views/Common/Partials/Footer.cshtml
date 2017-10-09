@@ -235,12 +235,12 @@
 			}
 			</div>
 
-			@if (Model.SmartStoreHint.HasValue())
+			@*@if (Model.SmartStoreHint.HasValue())
 			{
 				<div class="col-12 col-sm-auto pb-1 pb-sm-0 text-sm-center">
 					@Html.Raw(Model.SmartStoreHint)
 				</div>
-			}
+			}*@
 
 			<div class="col text-sm-right">
 				@T("Content.CopyrightNotice", DateTime.Now.Year.ToString(), @Model.StoreName)

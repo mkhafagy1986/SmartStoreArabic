@@ -22,10 +22,10 @@
 				<input class="facet-control-native" type="radio" name="optradio-@(Model.Key)" value="@facet.Value.ToString()" @Html.Attr("checked", "checked", facet.Value.IsSelected)>
 				<span class="facet-control-ui"></span>
 				<span class="facet-label has-count" @Html.Attr("data-count", facet.HitCount.ToString("N0"), facet.HitCount > 0)>
-					<span class="rating">
+                    <span>@T("Search.Facet.StarsAndMore")</span>
+                    <span class="rating">
 						<span style="width: @(facet.Value.Value.Convert<int>() * 20)%"></span>
 					</span>
-					<span>@T("Search.Facet.StarsAndMore")</span>
 				</span>
 			</label>
 		</div>
