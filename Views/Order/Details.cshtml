@@ -68,7 +68,7 @@
        
 		<div class="card card-block order-details-box">
 			<div class="row">
-				<div class="col-md-8">
+				@*<div class="col-md-8">
 					<div class="row">
 						<div class="col mb-4 mb-lg-0 billinginfo">
 							<h5>@T("Order.BillingAddress")</h5>
@@ -83,11 +83,11 @@
 							</div>
 						}
 					</div>
-				</div>
+				</div>*@
 
 				@if (Model.PaymentMethod.HasValue() || Model.IsShippable || Model.VatNumber.HasValue())
 				{
-					<div class="col-md-4">
+					<div class="col-md-12">
 						<div class="row">
 							<div class="col">
 								@if (Model.IsShippable)
